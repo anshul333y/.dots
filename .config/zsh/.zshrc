@@ -19,8 +19,8 @@ alias t="tmux"
 alias y="yazi"
 alias ff="fastfetch"
 alias i="sudo pacman -S"
-alias u="sudo pacman -Rsu"
-alias s="cd ~/.dots && stow --adopt . && cd"
+alias u="sudo pacman -Rsun"
+alias s="cd ~/.dots && stow --adopt . && cd -"
 alias m="sudo mount -o uid=$(id -u),gid=$(id -g),umask=022"
 alias music='yt-dlp -f bestaudio -x --audio-format best --embed-thumbnail --embed-metadata --download-archive "$HOME/music/archive.txt" -P "$HOME/music"'
 alias gparted='pkexec env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR gparted'
