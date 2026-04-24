@@ -20,11 +20,15 @@ alias y="yazi"
 alias ff="fastfetch"
 alias i="sudo pacman -S"
 alias u="sudo pacman -Rsun"
+
 alias s="cd ~/.dots && stow --adopt . && cd -"
 alias m="sudo mount -o uid=$(id -u),gid=$(id -g),umask=022"
 alias music='yt-dlp -f bestaudio -x --audio-format best --embed-thumbnail --embed-metadata --download-archive "$HOME/music/archive.txt" -P "$HOME/music"'
 alias gparted='pkexec env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR gparted'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+alias d="docker"
+alias dc="docker-compose"
 
 # use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char
