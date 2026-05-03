@@ -1,17 +1,17 @@
 @import url("file:///home/anshul333y/.cache/wal/colors-waybar.css");
 
 * {
-    border: none;
-    border-radius: 0;
-    font-family: Maple Mono NF CN;
-    font-weight: bold;
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: Maple Mono NF CN;
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: @foreground;
+  background: rgba(21, 18, 27, 0);
+  color: @foreground;
 }
 
 #clock,
@@ -24,123 +24,123 @@ window#waybar {
 #battery,
 #backlight,
 #pulseaudio {
-    background: rgba(0, 0, 0, 1);
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+  background: rgba(0, 0, 0, 1);
+  padding: 0px 10px;
+  margin: 3px 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 #clock {
-    color: @color4;
-    border-radius: 10px;
-    margin-left: 10px;
-    border-right: 0px;
+  color: @color4;
+  border-radius: 10px;
+  margin-left: 10px;
+  border-right: 0px;
 }
 
 #workspaces {
-    background: rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    margin-left: 10px;
-    padding-right: 0px;
-    padding-left: 5px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  margin-left: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
 }
 
 #workspaces button {
-    padding: 5px;
-    color: @color4;
-    margin-right: 5px;
+  padding: 5px;
+  color: @color4;
+  margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: @color5;
+  color: @color5;
 }
 
 #workspaces button.focused {
-    color: @color5;
-    background: @color1;
-    border-radius: 10px;
+  color: @color5;
+  background: @color1;
+  border-radius: 10px;
 }
 
 #workspaces button.urgent {
-    color: @background;
-    background: @color2;
-    border-radius: 10px;
+  color: @background;
+  background: @color2;
+  border-radius: 10px;
 }
 
 #workspaces button:hover {
-    background: @foreground;
-    color: @background;
-    border-radius: 10px;
+  background: @foreground;
+  color: @background;
+  border-radius: 10px;
 }
 
 #custom-wlogout {
-    background: rgba(0, 0, 0, 1);
-    padding: 0px 10px 0px 7px;
-    margin: 3px 0px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    color: @color4;
-    border-radius: 10px;
-    margin-left: 10px;
+  background: rgba(0, 0, 0, 1);
+  padding: 0px 10px 0px 7px;
+  margin: 3px 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: @color4;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 #custom-pacman-updates {
-    padding: 0px 10px 0px 9px;
-    margin: 3px 0px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    background: rgba(0, 0, 0, 1);
-    color: @color4;
-    border-radius: 10px;
-    margin-left: 10px;
+  padding: 0px 10px 0px 9px;
+  margin: 3px 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 1);
+  color: @color4;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 #window {
-    color: @color4;
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+  color: @color4;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #tray {
-    border-radius: 10px;
-    margin-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
 #cpu {
-    color: @color4;
-    border-radius: 10px 0px 0px 10px;
+  color: @color4;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #memory {
-    color: @color4;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
+  color: @color4;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
 }
 
 #network {
-    color: @color4;
-    border-radius: 10px 0px 0px 10px;
+  color: @color4;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #battery {
-    color: @color4;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
+  color: @color4;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
 }
 
 #backlight {
-    color: @color4;
-    border-radius: 10px 0px 0px 10px;
+  color: @color4;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio {
-    color: @color4;
+  color: @color4;
 }
 
 #pulseaudio.microphone {
-    color: @color4;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
+  color: @color4;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
 }
