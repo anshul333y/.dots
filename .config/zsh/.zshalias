@@ -9,10 +9,33 @@ alias u="sudo pacman -Rsun"
 
 alias s="cd ~/.dots && stow --adopt . && cd -"
 alias m="sudo mount -o uid=$(id -u),gid=$(id -g),umask=022"
-alias music='yt-dlp -f bestaudio -x --audio-format best --embed-thumbnail --embed-metadata --download-archive \
-  "$HOME/music/archive.txt" -P "$HOME/music"'
+alias music='yt-dlp -f bestaudio -x --audio-format best --embed-thumbnail --embed-metadata --download-archive "$HOME/music/archive.txt" -P "$HOME/music"'
 alias gparted='pkexec env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR gparted'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 alias d="docker"
 alias dc="docker-compose"
+
+ginit() {
+  local repo=$1
+  if [[ -z "$repo" ]]; then
+    echo "Usage: ginit <repo-name>"
+    return 1
+  fi
+  echo "# $repo" > README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin git@github.com:anshul333y/$repo.git
+  git push -u origin main
+}
+
+gclone() {
+  local repo=$1
+  if [[ -z "$repo" ]]; then
+    echo "Usage: gclone <repo-name>"
+    return 1
+  fi
+  git clone git@github.com:anshul333y/${repo}.git && cd "$repo"
+}
