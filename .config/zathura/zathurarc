@@ -55,8 +55,3 @@ set recolor-reverse-video true
 set recolor-keephue true
 
 set render-loading false
-
-# fullscreen
-unmap f
-map f toggle_fullscreen
-map [fullscreen] f toggle_fullscreen
