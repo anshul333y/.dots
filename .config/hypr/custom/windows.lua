@@ -2,7 +2,7 @@
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
 	name = "suppress-maximize-events",
 	match = { class = ".*" },
 
@@ -29,4 +29,32 @@ hl.window_rule({
 
 	move = "20 monitor_h-120",
 	float = true,
+})
+
+hl.window_rule({
+	name = "brave-workspace-1",
+	match = { class = "brave-browser" },
+
+	workspace = "1",
+})
+
+hl.window_rule({
+	name = "chrome-workspace-2",
+	match = { class = "google-chrome" },
+
+	workspace = "2",
+})
+
+hl.window_rule({
+	name = "kitty-workspace-3",
+	match = { class = "kitty" },
+
+	workspace = "3",
+})
+
+hl.window_rule({
+	name = "firefox-workspace-4",
+	match = { class = "firefox" },
+
+	workspace = "4",
 })
