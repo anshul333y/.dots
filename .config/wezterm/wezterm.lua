@@ -1,8 +1,9 @@
 local wezterm = require("wezterm")
 local home = os.getenv("HOME")
-wezterm.add_to_config_reload_watch_list(home .. "/.cache/wal/wezterm-wal.toml")
 
 return {
+	enable_wayland = false,
+
 	default_prog = { "/bin/zsh", "-i" },
 
 	color_scheme_dirs = { home .. "/.cache/wal" },
