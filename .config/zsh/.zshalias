@@ -16,6 +16,12 @@ alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias d="docker"
 alias dc="docker-compose"
 
+alias cat='bat'
+alias ls='eza --icons'
+alias ll='eza -lh --icons --git'
+alias l='eza -lah --icons --git'
+alias tree='eza --tree --icons'
+
 ginit() {
   local repo=$1
   if [[ -z "$repo" ]]; then
