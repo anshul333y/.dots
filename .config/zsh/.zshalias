@@ -4,8 +4,14 @@ alias n="nvim"
 alias t="tmux"
 alias y="yazi"
 alias ff="fastfetch"
-alias i="sudo pacman -S"
-alias u="sudo pacman -Rsun"
+
+if command -v pacman >/dev/null 2>&1; then
+  alias i="sudo pacman -S"
+  alias u="sudo pacman -Rsun"
+elif command -v apt >/dev/null 2>&1; then
+  alias i="sudo apt install"
+  alias u="sudo apt purge"
+fi
 
 alias s="cd ~/.dots && stow --adopt . && cd -"
 alias m="sudo mount -o uid=$(id -u),gid=$(id -g),umask=022"
@@ -16,6 +22,7 @@ alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 alias d="docker"
 alias dc="docker-compose"
 
+compdef eza=ls
 alias cat='bat'
 alias ls='eza --icons'
 alias ll='eza -lh --icons --git'
@@ -28,10 +35,11 @@ ginit() {
     echo "Usage: ginit <repo-name>"
     return 1
   fi
+  mkdir "$repo"
   echo "# $repo" > README.md
   git init
   git add README.md
-  git commit -m "first commit"
+  git commit -m "docs: add README"
   git branch -M main
   git remote add origin git@github.com:anshul333y/$repo.git
   git push -u origin main
@@ -43,5 +51,5 @@ gclone() {
     echo "Usage: gclone <repo-name>"
     return 1
   fi
-  git clone git@github.com:anshul333y/${repo}.git && cd "$repo"
+  git clone git@github.com:anshul333y/${repo}.git
 }

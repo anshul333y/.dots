@@ -1,8 +1,20 @@
 # anshul333y's zsh config
 
 # history
+HISTFILE="$XDG_STATE_HOME"/zsh/history
 HISTSIZE=10000000
 SAVEHIST=10000000
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_FIND_NO_DUPS
+
+# shell behaviour
+setopt AUTOCD
+setopt NOBEEP
+setopt NUMERIC_GLOB_SORT
 
 # oh-my-zsh
 export ZSH="$HOME/.config/oh-my-zsh"
