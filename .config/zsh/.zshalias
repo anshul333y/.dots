@@ -36,6 +36,7 @@ ginit() {
     return 1
   fi
   mkdir "$repo"
+  cd "$repo"
   echo "# $repo" > README.md
   git init
   git add README.md
