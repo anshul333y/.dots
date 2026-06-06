@@ -4,6 +4,7 @@
 
 local mainMod = "SUPER"
 
+hl.bind("XF86PowerOff", hl.dsp.exec_cmd("hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'"))
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
@@ -18,7 +19,7 @@ hl.bind(mainMod .. " + Z", hl.dsp.window.fullscreen())
 
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(Terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
-hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprshutdown"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(FileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(Menu))
