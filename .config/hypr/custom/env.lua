@@ -34,6 +34,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dunst")
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("xrdb -merge ~/.config/X11/Xresources")
 end)
 
 -------------------------------

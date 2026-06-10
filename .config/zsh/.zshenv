@@ -23,6 +23,7 @@ export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export MANPAGER="bat -l man -p"
 
 export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
