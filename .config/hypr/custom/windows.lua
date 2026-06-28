@@ -32,6 +32,13 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	name = "easyeffects-workspace-1",
+	match = { class = "org.kde.easyeffects" },
+
+	workspace = "1",
+})
+
+hl.window_rule({
 	name = "brave-workspace-1",
 	match = { class = "brave-browser" },
 
