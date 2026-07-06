@@ -1,0 +1,2 @@
+let &viminfofile = expand('$XDG_STATE_HOME') . '/vim/viminfo'
+let g:netrw_home = expand('$XDG_STATE_HOME') . '/vim'
