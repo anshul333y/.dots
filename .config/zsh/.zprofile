@@ -17,7 +17,7 @@ EOF
   echo -e "$NC"
 }
 
-# mpd daemon start
+# mpd server start
 [ ! -s ~/.config/mpd/pid ] && mpd
 
 # ascii art

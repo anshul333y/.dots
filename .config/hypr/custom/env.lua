@@ -20,8 +20,8 @@ hl.monitor({
 ---- MY PROGRAMS ----
 ---------------------
 
-Terminal = "kitty"
-FileManager = "kitty yazi"
+Terminal = "footclient"
+FileManager = "footclient -e yazi"
 Menu = "rofi -show drun"
 
 -------------------
@@ -33,8 +33,9 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("dunst")
 	hl.exec_cmd("waybar")
+	hl.exec_cmd("foot --server")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
-	hl.exec_cmd("xrdb -merge ~/.config/X11/Xresources")
+	hl.exec_cmd("xrdb -merge ~/.config/x11/Xresources")
 end)
 
 -------------------------------

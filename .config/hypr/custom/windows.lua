@@ -53,8 +53,8 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "kitty-workspace-3",
-	match = { class = "kitty" },
+	name = "footclient-workspace-3",
+	match = { class = "footclient" },
 
 	workspace = "3",
 })
