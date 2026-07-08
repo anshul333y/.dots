@@ -4,8 +4,8 @@ alias n="nvim"
 alias t="tmux"
 alias y="yazi"
 alias ff="fastfetch"
-alias rb="hyprshutdown -t 'Restarting...' --post-cmd 'systemctl reboot'"
-alias po="hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'"
+alias reboot="hyprshutdown -t 'Restarting...' --post-cmd 'systemctl reboot'"
+alias poweroff="hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'"
 
 if command -v pacman >/dev/null 2>&1; then
   alias i="sudo pacman -S"

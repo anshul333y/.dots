@@ -29,11 +29,12 @@ Menu = "rofi -show drun"
 -------------------
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("hyprpaper")
+	hl.exec_cmd("foot --server")
+	hl.exec_cmd("awww-daemon")
 	hl.exec_cmd("hypridle")
 	hl.exec_cmd("dunst")
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("foot --server")
+	hl.exec_cmd("sleep 6 && waybar")
+	hl.exec_cmd("sleep 3 && awww img ~/pics/wall.jpg -t random --transition-duration 3 --transition-fps 60")
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 	hl.exec_cmd("xrdb -merge ~/.config/x11/Xresources")
 end)
