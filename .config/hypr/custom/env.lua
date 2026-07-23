@@ -21,7 +21,7 @@ hl.monitor({
 ---------------------
 
 Terminal = "footclient"
-FileManager = "footclient -e yazi"
+FileManager = "foot -e yazi"
 Menu = "rofi -show drun"
 
 -------------------

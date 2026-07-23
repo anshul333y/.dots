@@ -24,7 +24,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "loginctl lock-session && systemctl suspend",
+    "action" : "loginctl lock-session && systemctl suspend-then-hibernate",
     "text" : "Suspend",
     "keybind" : "u"
 }
