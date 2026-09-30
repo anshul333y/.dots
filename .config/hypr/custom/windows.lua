@@ -74,6 +74,13 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	name = "code-workspace-3",
+	match = { class = "com.microsoft.VSCode" },
+
+	workspace = "3",
+})
+
+hl.window_rule({
 	name = "firefox-workspace-4",
 	match = { class = "firefox" },
 
