@@ -17,8 +17,8 @@ configuration {
 window {
     width:                 70%;
     location:              center;
-    border-radius:         16px;
-    padding:               20px;
+    border-radius:         0px;
+    padding:               10px;
     background-color:      rgba(0, 0, 0, 0.3);
 }
 
