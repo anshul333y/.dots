@@ -3,33 +3,37 @@ alias c="clear"
 alias n="nvim"
 alias t="tmux"
 alias y="yazi"
+alias d="docker"
+alias k="kubectl"
+
 alias ff="fastfetch"
-alias reboot="hyprshutdown -t 'Restarting...' --post-cmd 'systemctl reboot'"
-alias poweroff="hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'"
-
-if command -v pacman >/dev/null 2>&1; then
-  alias i="sudo pacman -S"
-  alias u="sudo pacman -Rsun"
-elif command -v apt >/dev/null 2>&1; then
-  alias i="sudo apt install"
-  alias u="sudo apt purge"
-fi
-
 alias s="cd ~/.dots && stow . && cd -"
 alias m="sudo mount -o uid=$(id -u),gid=$(id -g),umask=022"
 alias music='yt-dlp -f bestaudio -x --audio-format best --embed-thumbnail --embed-metadata --download-archive "$HOME/music/archive.txt" -P "$HOME/music"'
 alias gparted='pkexec env WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR gparted'
 alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
-alias d="docker"
-alias dc="docker-compose"
-
 compdef eza=ls
-alias cat='bat'
 alias ls='eza --icons'
 alias ll='eza -lh --icons --git'
 alias l='eza -lah --icons --git'
 alias tree='eza --tree --icons'
+
+if command -v pacman >/dev/null 2>&1; then
+  alias cat='bat'
+  alias rb="hyprshutdown -t 'Restarting...' --post-cmd 'systemctl reboot'"
+  alias po="hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'"
+  alias i="sudo pacman -S"
+  alias u="sudo pacman -Rsun"
+  alias dc="docker-compose"
+elif command -v apt >/dev/null 2>&1; then
+  alias cat='batcat'
+  alias rb="systemctl reboot"
+  alias po="systemctl poweroff"
+  alias i="sudo apt install"
+  alias u="sudo apt purge"
+  alias dc="docker compose"
+fi
 
 ginit() {
   local repo=$1

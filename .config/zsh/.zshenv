@@ -18,13 +18,18 @@ path=(
   $path
 )
 
+if command -v pacman >/dev/null 2>&1; then
+  export MANPAGER="bat -l man -p"
+elif command -v apt >/dev/null 2>&1; then
+  export MANPAGER="batcat -l man -p"
+fi
+
 export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump-$HOST-$ZSH_VERSION"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
-export MANPAGER="bat -l man -p"
 
 export PYTHON_HISTORY="$XDG_STATE_HOME/python_history"
 export PYTHONPYCACHEPREFIX="$XDG_CACHE_HOME/python"
