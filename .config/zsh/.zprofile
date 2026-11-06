@@ -20,8 +20,14 @@ EOF
 # ascii art
 print_banner
 
-if [[ "$(tty)" == "/dev/tty1" || -n "$GDMSESSION" ]]; then
+# power profile
+if [[ "$(cat /sys/class/power_supply/ADP1/online 2>/dev/null)" == "1" ]]; then
+    powerprofilesctl set performance
+  else
+    powerprofilesctl set balanced
+fi
 
+if [[ "$(tty)" == "/dev/tty1" || -n "$GDMSESSION" ]]; then
   # mpd server start
   [ ! -s ~/.config/mpd/pid ] && mpd
 
@@ -32,5 +38,4 @@ if [[ "$(tty)" == "/dev/tty1" || -n "$GDMSESSION" ]]; then
   if uwsm check may-start; then
    exec uwsm start hyprland-uwsm.desktop
   fi
-
 fi
