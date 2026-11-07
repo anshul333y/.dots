@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Foot Server
+Exec=systemctl --user start foot-server.service
+Terminal=false

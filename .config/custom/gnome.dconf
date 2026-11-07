@@ -1,5 +1,5 @@
 [org/gnome/Console]
-custom-font='Maple Mono NF CN 13'
+custom-font='JetBrainsMono Nerd Font 13'
 font-scale=1.0
 last-window-maximised=false
 last-window-size=(1680, 940)
@@ -45,7 +45,7 @@ default-zoom-level='medium'
 initial-size=(1680, 940)
 
 [org/gnome/shell]
-favorite-apps=['com.github.wwmm.easyeffects.desktop', 'com.discordapp.Discord.desktop', 'org.telegram.desktop.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Console.desktop', 'kitty.desktop', 'firefox.desktop', 'google-chrome.desktop']
+favorite-apps=['com.github.wwmm.easyeffects.desktop', 'com.discordapp.Discord.desktop', 'org.telegram.desktop.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Console.desktop', 'kitty.desktop', 'foot.desktop', 'firefox.desktop', 'google-chrome.desktop']
 
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Super>s']
@@ -74,8 +74,8 @@ name='hyprstyle'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
 binding='<Super>Return'
-command='kitty'
-name='kitty'
+command='footclient'
+name='footclient'
 
 [org/gnome/shell/extensions/dash-to-dock]
 dock-fixed=false
