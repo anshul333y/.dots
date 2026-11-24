@@ -46,15 +46,15 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "chrome-workspace-2",
-	match = { class = "google-chrome" },
+	name = "firefox-workspace-2",
+	match = { class = "firefox" },
 
 	workspace = "2",
 })
 
 hl.window_rule({
-	name = "kitty-workspace-3",
-	match = { class = "kitty" },
+	name = "footclient-workspace-3",
+	match = { class = "footclient" },
 
 	workspace = "3",
 })
@@ -67,8 +67,8 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "footclient-workspace-3",
-	match = { class = "footclient" },
+	name = "kitty-workspace-3",
+	match = { class = "kitty" },
 
 	workspace = "3",
 })
@@ -81,8 +81,8 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "firefox-workspace-4",
-	match = { class = "firefox" },
+	name = "chrome-workspace-4",
+	match = { class = "google-chrome" },
 
 	workspace = "4",
 })
